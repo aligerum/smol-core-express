@@ -1,0 +1,23 @@
+{
+  "name": "smol-core-express",
+  "version": "0.1.0",
+  "description": "Express API Core for smol",
+  "main": "main.js",
+  "keywords": [
+    "api",
+    "core"
+    "express",
+    "smol",
+  ],
+  "author": "Allister Aligerum",
+  "repository": "github:aligerum/smol-core-express",
+  "homepage": "https://smol.aligerum.io",
+  "bugs": "allister@aligerum.io",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-formidable": "^1.2.0",
+    "smol": "../smol",
+    "socket.io": "^2.3.0"
+  },
+}
