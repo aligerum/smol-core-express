@@ -1,0 +1,7 @@
+{
+  "description": "Express API",
+  "maintenanceEffects": [
+    "All HTTP requests return 503 Service Unavailable",
+    "Sockets are disabled"
+  ]
+}
