@@ -5,9 +5,9 @@
   "main": "main.js",
   "keywords": [
     "api",
-    "core"
+    "core",
     "express",
-    "smol",
+    "smol"
   ],
   "author": "Allister Aligerum",
   "repository": "github:aligerum/smol-core-express",
@@ -17,7 +17,7 @@
   "dependencies": {
     "express": "^4.17.1",
     "express-formidable": "^1.2.0",
-    "smol": "../smol",
+    "smol": "github:aligerum/smol",
     "socket.io": "^2.3.0"
-  },
+  }
 }
