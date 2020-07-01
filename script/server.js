@@ -25,6 +25,10 @@ app.disable('x-powered-by')
 // allow various post data
 app.use(formidable())
 
+// add global middleware
+app.use(ApiResponse.middleware)
+app.use(validator.middleware)
+
 // add routes
 let routes
 router.app = app
@@ -39,10 +43,6 @@ app.use((err, req, res, next) => {
 
 // listen on configured port
 http.listen(coreConfig.port, () => console.log(smol.colors.green(`${smolConfig.appName} Express API core (${smol.coreName}) listening on port ${coreConfig.port}${coreConfig.maintenanceMode ? ' in maintenance mode' : ''}`)))
-
-// add global middleware
-app.use(ApiResponse.middleware)
-app.use(validator.middleware)
 
 // set up sockets
 if (!smolConfig.maintenanceMode) {
